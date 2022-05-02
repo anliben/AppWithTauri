@@ -1,0 +1,6 @@
+{
+  "name": "AppWithTauri",
+  "integrations": {},
+  "type": "angular",
+  "appId":"com.joao.app"
+}
