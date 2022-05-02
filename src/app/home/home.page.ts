@@ -7,14 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  imgSource = 'https://via.placeholder.com/150';
-  width: string;
-  heigth: string;
 
   constructor(
   ) {}
 
-  createImage(){
-    this.imgSource = `https://via.placeholder.com/${this.width}x${this.heigth}`;
-  }
 }

@@ -1,31 +1,6 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> App com Rust </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">App With Rust</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div class="flex flex-col items-center pt-20 w-screen h-screen">
-    <img [src]="imgSource" class="mb-11 w-xl" alt="" />
-
-    <input
-      [(ngModel)]="width"
-      class="border border-indigo-700 h-11 focus:ring-indigo-700 xl:w-2/12 md:w-2/12 w-9/12 pr-10 rounded-md text-black bg-white"
-      placeholder="Largura"
-      type="number"
-    />
-    <input
-      [(ngModel)]="heigth"
-      class="border border-indigo-700 h-11 xl:w-2/12 md:w-2/12 text-black focus:ring-indigo-700 pr-5 w-9/12 rounded-md bg-white"
-      placeholder="Altura"
-      type="number"
-    />
-    <ion-button (click)="createImage()">Gerar Imagem</ion-button>
-  </div>
+  <app-menu-dynamic></app-menu-dynamic>
+  <i class="bx bx-hot"></i>
+<i class="bx bxs-hot"></i>
+<i class="bx bxl-facebook-square"></i>
 </ion-content>

@@ -1,0 +1,27 @@
+<ion-content>
+  <po-breadcrumb
+    [p-items]="[
+      { label: 'Home', link: '/' },
+      { label: 'Generate Imagens', link: '/generate-imagens' }
+    ]"
+  >
+  </po-breadcrumb>
+
+  <div class="flex flex-col items-center w-screen h-screen pt-20">
+    <img [src]="imgSource" class="mb-11 w-xl" alt="" />
+
+    <input
+      [(ngModel)]="width"
+      class="w-9/12 pr-10 text-black bg-white border border-indigo-700 rounded-md h-11 focus:ring-indigo-700 xl:w-2/12 md:w-2/12"
+      placeholder="Largura"
+      type="number"
+    />
+    <input
+      [(ngModel)]="heigth"
+      class="w-9/12 pr-5 text-black bg-white border border-indigo-700 rounded-md h-11 xl:w-2/12 md:w-2/12 focus:ring-indigo-700"
+      placeholder="Altura"
+      type="number"
+    />
+    <ion-button (click)="createImage()">Gerar Imagem</ion-button>
+  </div>
+</ion-content>

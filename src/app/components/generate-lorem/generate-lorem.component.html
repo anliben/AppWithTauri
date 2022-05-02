@@ -1,0 +1,41 @@
+<ion-content>
+  <po-breadcrumb
+    [p-items]="[
+      { label: 'Home', link: '/' },
+      { label: 'Generate Lorem', link: '/generate-lorem' }
+    ]"
+  >
+  </po-breadcrumb>
+
+  <div class="flex flex-col items-center justify-center">
+      <po-code-editor
+      class="po-md-12"
+      [(ngModel)]="result"
+      p-height="300"
+      p-theme="hc-black"
+      ></po-code-editor>
+    <div class="flex-row">
+
+      <po-input p-help="Número máximo de palavras" [(ngModel)]="maxWords" class="po-md-2 po-lg-2 po-sm-6"></po-input>
+      <po-input p-help="Número máximo de sentencias"  [(ngModel)]="maxSentences" class="po-md-2 po-lg-2 po-sm-6"></po-input>
+    </div>
+    <div class="flex-row">
+
+      <po-button
+      p-label="Criar Palavras"
+      (p-click)="generate('words')"
+      ></po-button>
+      <po-button
+      p-label="Criar Texto"
+      (p-click)="generate('paragraph')"
+      ></po-button>
+      <po-button
+      p-label="Criar Texto"
+      (p-click)="generate('sentences')"
+      ></po-button>
+
+
+
+    </div>
+    </div>
+</ion-content>
