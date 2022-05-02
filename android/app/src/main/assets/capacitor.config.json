@@ -1,6 +1,0 @@
-{
-	"appId": "com.example.app",
-	"appName": "AppWithTauri",
-	"webDir": "www",
-	"bundledWebRuntime": false
-}
